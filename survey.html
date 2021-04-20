@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./survey.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favorite Fruit</title>
+</head>
+<body>
+
+    <div class="header">
+        <h1 id="title">This is a survey form!</h1>
+        <p id="description"><i>Please let us know your favorite fruit below!</i></p>
+    </div>
+
+    
+    <div class="container">
+
+        <form id="survey-form">
+
+            <div class="flex-container">
+
+                <div class="item1 alignitem aligntext">
+                    <label class="label" for="name" id="name-label">First Name</label>
+                </div>
+                <div class="item1">
+                    <input class ="input" id="name" type="text" name="name" placeholder="First Name" required>
+                </div>
+
+            </div>
+
+            <div class="flex-container">
+
+                <div class="item1 alignitem aligntext">
+                    <label class="label" for="lname">Last Name</label>
+                </div>
+                <div class="item1">
+                    <input class ="input" id="lname" type="text" name="lname" placeholder="Last Name">
+                </div>
+
+            </div>
+
+            <div class="flex-container">
+
+                <div class="item1 alignitem aligntext">
+                    <label class="label" for="email" id="email-label">Email</label>
+                </div>
+                <div class="item1">
+                    <input class ="input" id="email" type="email" name="email" placeholder="E-mail" required>
+                </div>
+
+            </div>
+
+            <div class="flex-container">
+
+                <div class="item1 alignitem aligntext">
+                    <label class="label" for="number" id="number-label">Age (Optional)</label>
+                </div>
+                <div class="item1">
+                    <input class ="input" id="number" type="number" name="age" placeholder="Age" min="1" max="100">
+                </div>
+
+            </div>
+
+            <hr>
+
+            <div class="flex-container">
+
+                <label class="item1 alignitem aligntext">What is your favorite fruit? (Check all that apply)</label>
+
+                <div class="item1">
+
+                    <input type="checkbox" id="mango" name="fruit" value="mango">
+                    <label for="mango">Mango</label><br>
+                    <input type="checkbox" id="peach" name="fruit" value="peach">
+                    <label for="peach">Peach</label><br>
+                    <input type="checkbox" id="orange" name="fruit" value="orange">
+                    <label for="orange">Orange</label><br>
+                    <input type="checkbox" id="apple" name="fruit" value="apple">
+                    <label for="apple">Apple</label><br>
+                    <input type="checkbox" id="strawberry" name="fruit" value="strawberry">
+                    <label for="strawberry">Strawberry</label>
+
+                </div>
+
+            </div>
+
+            <hr>
+
+            <div class="flex-container">
+
+                <label class="item1 alignitem aligntext">How likely are you to try a new fruit?</label>
+                
+                <div class="item1">
+
+                    <input type="radio" id="NotLikely" name="NewFruit" value="NotLikely">
+                    <label for="NotLikely">Not Likely</label><br>
+                    <input type="radio" id="SomeLikely" name="NewFruit" value="SomeLikely">
+                    <label for="SomeLikely">Somewhat Likely</label><br>
+                    <input type="radio" id="HighLikely" name="NewFruit" value="HighLikely">
+                    <label for="HighLikely">Highly Likely</label>
+
+                </div>
+
+            </div>
+
+            <hr>
+
+            <h2 class="header">Sign up for our newsletter below!</h2>
+
+            <hr>
+
+            <div class="flex-container">
+
+                <div class="item1 alignitem aligntext">
+                    <label class="label" for="address">Current Address</label>
+                </div>
+                <div class="item1">
+                    <input class ="input" id="address" type="text" name="address" placeholder="Address">
+                </div>
+
+            </div>
+
+            <div class="flex-container">
+
+                <div class="item1 alignitem aligntext">
+                    <label class="label" for="city">City</label>
+                </div>
+                <div class="item1">
+                    <input class ="input" id="city" type="text" name="city" placeholder="City">
+                </div>
+
+                <div class="item1 alignitem aligntext">
+                    <label class="label" for="state">State</label>
+                </div>
+                <div class="item1">
+                    <select class ="input" name="state" id="dropdown">
+                        <option selected disabled>State</option>
+                        <option value="AL">Alabama</option>
+                        <option value="AK">Alaska</option>
+                        <option value="AZ">Arizona</option>
+                        <option value="AR">Arkansas</option>
+                        <option value="CA">California</option>
+                        <option value="CO">Colorado</option>
+                        <option value="CT">Connecticut</option>
+                        <option value="DE">Delaware</option>
+                        <option value="DC">District Of Columbia</option>
+                        <option value="FL">Florida</option>
+                        <option value="GA">Georgia</option>
+                        <option value="HI">Hawaii</option>
+                        <option value="ID">Idaho</option>
+                        <option value="IL">Illinois</option>
+                        <option value="IN">Indiana</option>
+                        <option value="IA">Iowa</option>
+                        <option value="KS">Kansas</option>
+                        <option value="KY">Kentucky</option>
+                        <option value="LA">Louisiana</option>
+                        <option value="ME">Maine</option>
+                        <option value="MD">Maryland</option>
+                        <option value="MA">Massachusetts</option>
+                        <option value="MI">Michigan</option>
+                        <option value="MN">Minnesota</option>
+                        <option value="MS">Mississippi</option>
+                        <option value="MO">Missouri</option>
+                        <option value="MT">Montana</option>
+                        <option value="NE">Nebraska</option>
+                        <option value="NV">Nevada</option>
+                        <option value="NH">New Hampshire</option>
+                        <option value="NJ">New Jersey</option>
+                        <option value="NM">New Mexico</option>
+                        <option value="NY">New York</option>
+                        <option value="NC">North Carolina</option>
+                        <option value="ND">North Dakota</option>
+                        <option value="OH">Ohio</option>
+                        <option value="OK">Oklahoma</option>
+                        <option value="OR">Oregon</option>
+                        <option value="PA">Pennsylvania</option>
+                        <option value="RI">Rhode Island</option>
+                        <option value="SC">South Carolina</option>
+                        <option value="SD">South Dakota</option>
+                        <option value="TN">Tennessee</option>
+                        <option value="TX">Texas</option>
+                        <option value="UT">Utah</option>
+                        <option value="VT">Vermont</option>
+                        <option value="VA">Virginia</option>
+                        <option value="WA">Washington</option>
+                        <option value="WV">West Virginia</option>
+                        <option value="WI">Wisconsin</option>
+                        <option value="WY">Wyoming</option>
+                    </select>
+                </div>
+
+                <div class="item1 alignitem aligntext">
+                    <label class="label" for="zip">Zip Code</label>
+                </div>
+                <div class="item1 zip">
+                    <input class ="input" id="zip" type="text" name="zip" placeholder="Zip Code">
+                </div>
+            </div>
+
+            <hr>
+            <div class="flex-container">
+
+                <div class="item1 aligntext alignitem">
+                    <label for="comment">Any Comments?</label>
+                </div>
+
+                <div class="item1">
+                    <textarea id="comment" placeholder="Please leave comments here" multiline="true"></textarea>
+                </div>
+
+            </div>
+
+            <div class="flex-container">
+                    <button type="submit" id="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
+
+<!-- hi -->
